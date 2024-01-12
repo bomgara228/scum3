@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCUM</title>
+    <link rel="shortcut icon" href="images/uplogo.png" type="image/x-icon" />
+    <style>
+        * {
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0;
+        width: 100vw;
+        background-color: #1b2838;
+        font-family: "Motiva Sans", Sans-serif;
+    
+    }
+    a {
+        text-decoration: none;
+        color: #e2e2e2;
+    }
+    a:hover {
+        color: white;
+    }
+    .up {
+        background-color: #222630;
+        height: 100px;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo {
+        width: 140px;
+        height: 60px;
+    } 
+    h2 {
+        margin-right: 0.7vw;
+    }
+    #dnoc {
+        width: 10px;
+        height: 5px;
+        transition: all 0.15s;
+        position: absolute;
+        bottom:  15px;
+        left: 5px;
+        object-fit: none;
+    }
+    .chosen {
+        color: #1a9fff;
+    }
+    .foronething {
+        position: relative;
+    }
+
+    /*только для магаза*/
+
+    .uprndgames {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #4f94bc;
+    }
+    .forp {
+        padding: 10px;
+    }
+    p {
+        margin-right: 10px;
+    }
+    .footer  {
+        background-color: #171a21;
+    }
+    </style>
+</head>
+<body>
+    <div class="up">
+        <a href="main.html"><img src="images/logo.png" alt="logo" class="logo"></a>
+        <div class="foronething">
+            <img src="images/dno-chosen.png" alt="chosen" id="dnoc">
+            <a href="main.html"><h2 class="chosen">Магазин</h2></a>
+        </div>
+        <a href="podderska.html"><h2>Поддержка</h2></a>
+    </div>
+
+    <div class="uprndgames">
+        <p class="forp">Случайные игры</p>
+        <p>Пара игр</p>
+    </div>
+
+    <div class="rndgames">
+        
+    </div>
+    
+    <div class="footer">
+
+    </div>
+    <script>
+        //то что должно быть в бд
+        
+        let allgames = [
+            {
+                gamename: "Counter Strike 2",
+                gameimg: "header.jpg",
+            }
+        ]
+
+        //конец
+
+        let changewidth = document.getElementById('dnoc');
+            setTimeout(() => {
+                changewidth.style.width = '87px'
+            }, 10);
+    </script>
+</body>
+</html>
